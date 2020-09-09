@@ -7,7 +7,7 @@ exports[`should render Expense summary with multiple expense to the dashboard 1`
     10
      
     expenses
-     totalling $
+     totalling 
     $310.00
   </h1>
 </div>
@@ -20,7 +20,7 @@ exports[`should render Expense summary with one expense to the dashboard 1`] = `
     1
      
     expense
-     totalling $
+     totalling 
     $30.00
   </h1>
 </div>
