@@ -2,7 +2,7 @@ import * as firebase from 'firebase'
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
-    authDomain:process.env.AUTH_DOMAIN ,
+    authDomain:'expensify-76c4c.firebaseapp.com',
     databaseURL:'https://expensify-76c4c.firebaseio.com',
     projectId:process.env.PROJECT_ID ,
     storageBucket:process.env.STORAGE_BUCKET,
@@ -13,8 +13,9 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 const database = firebase.database()
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 
-export {firebase,database as default }
+export {firebase,googleAuthProvider,database as default }
 // database.ref('expenses').push(
 //     {
 //         description:'rent',
