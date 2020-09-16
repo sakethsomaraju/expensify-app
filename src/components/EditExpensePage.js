@@ -9,6 +9,7 @@ export class EditExpensePage extends React.Component {
     this.props.history.push('/');
   };
   onRemove = () => {
+    
     this.props.startRemoveExpense({ id: this.props.expense.id });
     this.props.history.push('/');
   };
@@ -28,6 +29,7 @@ export class EditExpensePage extends React.Component {
       
         
         <button className="button button--secondary" onClick={this.onRemove}>Remove Expense</button>
+        
       </div>
       </div>
     );

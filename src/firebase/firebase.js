@@ -14,8 +14,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 const database = firebase.database()
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
+const githubAuthProvider = new firebase.auth.GithubAuthProvider()
+githubAuthProvider.addScope('repo')
 
-export {firebase,googleAuthProvider,database as default }
+export {firebase,googleAuthProvider,githubAuthProvider,database as default }
 // database.ref('expenses').push(
 //     {
 //         description:'rent',
